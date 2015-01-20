@@ -8,7 +8,7 @@ license=('unknown')
 groups=()
 depends=('base-devel' 'nginx' 'php-fpm' 'gstreamer' 'gst-plugins-good' 'gst-plugins-bad' 'avahi' 'nss-mdns')
 install=airPi.install
-
+url="https://github.com/xvzf/arch-airPi-Package"
 package() {
 	#avahi configuration
 	install -D -m644 "$srcdir/airPi.service" "$pkgdir/etc/avahi/services/airPi.service";
