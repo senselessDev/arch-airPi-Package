@@ -1,26 +1,13 @@
 # Maintainer: senselessDev <mikrocontroller@arcor.de>
 pkgname=airpi
 pkgver=0.1
-pkgrel=1
-epoch=
+pkgrel=2
 pkgdesc=""
 arch=(armv6h)
-url="http://fpv-community.de"
 license=('unknown')
 groups=()
 depends=('base-devel' 'nginx' 'php-fpm' 'gstreamer' 'gst-plugins-good' 'gst-plugins-bad' 'avahi' 'nss-mdns')
-checkdepends=()
-optdepends=()
-provides=()
-conflicts=()
-replaces=()
-backup=()
-options=()
 install=airPi.install
-changelog=
-source=()
-noextract=()
-md5sums=() #generate with 'makepkg -g'
 
 package() {
 	#avahi configuration
