@@ -6,10 +6,10 @@ post_install() {
 	sed -i.bak '/^open_basedir / s/$/:\/usr\/share\/nginx\/html\//' /etc/php/php.ini 
 	mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
 	mv /etc/nginx/nginx.conf.hidden /etc/nginx/nginx.conf
-        systemctl enable nginx.service
-        systemctl enable php-fpm.service
-        systemctl enable avahi-daemon.service
-        systemctl enable dhcpcd.service
+        systemctl preset nginx.service
+        systemctl preset php-fpm.service
+        systemctl preset avahi-daemon.service
+        systemctl preset dhcpcd.service
         systemctl start nginx.service 
         systemctl start php-fpm.service
         systemctl start avahi-daemon.service
@@ -38,10 +38,10 @@ post_upgrade() {
 	sed -i.bak '/^open_basedir / s/$/:\/usr\/share\/nginx\/html\//' /etc/php/php.ini 
 	mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
         mv /etc/nginx/nginx.conf.hidden /etc/nginx/nginx.conf
-	systemctl enable nginx.service
-        systemctl enable php-fpm.service
-        systemctl enable avahi-daemon.service
-        systemctl enable dhcpcd.service
+	systemctl preset nginx.service
+        systemctl preset php-fpm.service
+        systemctl preset avahi-daemon.service
+        systemctl preset dhcpcd.service
         systemctl start nginx.service 
         systemctl start php-fpm.service
         systemctl start avahi-daemon.service
