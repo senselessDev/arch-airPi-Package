@@ -1,5 +1,5 @@
 # Maintainer: senselessDev <mikrocontroller@arcor.de>
-pkgname=airPi
+pkgname=airpi
 pkgver=0.1
 pkgrel=1
 epoch=
