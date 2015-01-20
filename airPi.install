@@ -14,6 +14,7 @@ post_install() {
         systemctl start php-fpm.service
         systemctl start avahi-daemon.service
         systemctl start dhcpcd.service
+        echo "export PATH=$PATH:/opt/vc/bin/"
 }
 
 pre_upgrade() {

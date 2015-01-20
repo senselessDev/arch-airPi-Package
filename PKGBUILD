@@ -1,28 +1,14 @@
 # Maintainer: senselessDev <mikrocontroller@arcor.de>
-pkgname=airPi
+pkgname=airpi
 pkgver=0.1
-pkgrel=1
-epoch=
+pkgrel=2
 pkgdesc=""
 arch=(armv6h)
-url=""
 license=('unknown')
 groups=()
-depends=('nginx' 'php-fpm' 'gstreamer' 'gst-plugins-good' 'gst-plugins-bad' 'avahi' 'nss-mdns')
-makedepends=()
-checkdepends=()
-optdepends=()
-provides=()
-conflicts=()
-replaces=()
-backup=()
-options=()
+depends=('base-devel' 'nginx' 'php-fpm' 'gstreamer' 'gst-plugins-good' 'gst-plugins-bad' 'avahi' 'nss-mdns')
 install=airPi.install
-changelog=
-source=()
-noextract=()
-md5sums=() #generate with 'makepkg -g'
-
+url="https://github.com/xvzf/arch-airPi-Package"
 package() {
 	#avahi configuration
 	install -D -m644 "$srcdir/airPi.service" "$pkgdir/etc/avahi/services/airPi.service";
