@@ -9,7 +9,6 @@ url=""
 license=('unknown')
 groups=()
 depends=('base-devel' 'nginx' 'php-fpm' 'gstreamer' 'gst-plugins-good' 'gst-plugins-bad' 'avahi' 'nss-mdns')
-makedepends=('nginx' 'php-fpm' 'gstreamer' 'gst-plugins-good' 'gst-plugins-bad' 'avahi' 'nss-mdns')
 checkdepends=()
 optdepends=()
 provides=()
